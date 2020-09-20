@@ -14,8 +14,8 @@ app.use('/',express.static(__dirname+'/public'))
 
 db.sync()
    .then(()=>{
-    app.listen(3519,()=>{
-        console.log('server started on http://localhost:3519');
+    app.listen(3599,()=>{
+        console.log('server started on http://localhost:3599');
     })
     })
     .catch((err)=>{
