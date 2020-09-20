@@ -1,6 +1,6 @@
 function loadPosts() {
     $.get('/api/posts',(posts)=>{
-        for (const p of posts) {
+        for (let p of posts) {
             $('#posts_container').append(
                 $(`
                 <div class="col-4">
